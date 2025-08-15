@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <div id="live-result" class="live-result"></div>
+      <div id="display" class="display">0</div>
+      <div class="buttons">
+        <button class="clear" onclick="clearDisplay()">C</button>
+        <button class="function" onclick="applyFunction('sqrt')">√</button>
+        <button class="function" onclick="applyFunction('square')">x²</button>
+        <button class="function" onclick="applyFunction('reciprocal')">1/x</button>
+        <button class="operator" onclick="appendValue('/')">÷</button>
+
+        <button class="function" onclick="appendValue('Math.PI')">π</button>
+        <button class="function" onclick="appendValue('Math.E')">e</button>
+        <button class="function" onclick="applyFunction('log')">log</button>
+        <button class="function" onclick="applyFunction('ln')">ln</button>
+        <button class="operator" onclick="appendValue('*')">×</button>
+
+        <button class="function" onclick="applyFunction('sin')">sin</button>
+        <button class="function" onclick="applyFunction('cos')">cos</button>
+        <button class="function" onclick="applyFunction('tan')">tan</button>
+        <button class="function" onclick="appendValue('^')">^</button>
+        <button class="operator" onclick="appendValue('-')">−</button>
+
+
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('9')">9</button>
+        <button class="function" onclick="applyFunction('percent')">%</button>
+        <button class="operator" onclick="appendValue('+')">+</button>
+
+
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('6')">6</button>
+        <button onclick="appendValue('(')">(</button>
+        <button onclick="appendValue(')')">)</button>
+
+        
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('3')">3</button>
+        <button class="equal" onclick="calculate()">=</button>
+
+        <button onclick="appendValue('0')">0</button>
+        <button onclick="appendValue('.')">.</button>
+        <button onclick="backspace()">←</button>
+        <button onclick="appendValue(',')">,</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
